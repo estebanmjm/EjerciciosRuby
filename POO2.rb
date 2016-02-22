@@ -1,6 +1,6 @@
 class Traslado
 
-	attr_accesor :cayo, :tarifa, :dia
+	attr_accessor :cayo, :tarifa, :dia
 	def initialize(cayo, tarifa, dia)
 		@cayo = cayo
 		@tarifa = tarifa
@@ -12,7 +12,7 @@ class Traslado
 end
 
 class Lanchero
-	attr_accesor :cedula, :nombre
+	attr_accessor :cedula, :nombre
 	def initialize(cedula, nombre)
 		@cedula = cedula
 		@nombre = nombre
