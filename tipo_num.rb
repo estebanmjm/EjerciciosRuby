@@ -11,10 +11,15 @@ vect.each do |elem|
 	for div in 1..divm
 	elem%div
 		if elem%div == 0
-			suma_div = suma_div + div
-			puts "#{div} #{suma_div} #{elem}"
-		end
+		suma_div = suma_div + div
+		end	
 	end
+
+	if suma_div > elem 
+	puts "El numero #{elem} es abundante, ya que es menor que la suma de sus divisores (#{suma_div})"
+	else 
+	puts "El numero #{elem} es defectivo, ya que es mayor que la suma de sus divisores (#{suma_div})"
+	end
+
 	suma_div = 0
 end
-puts "#{vect}"
