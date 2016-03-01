@@ -8,8 +8,12 @@
 
 class Pasajero
 
-  attr_accessor :edad, :nombre, :edad
-  
+  attr_accessor :nombre, :sexo, :edad
+  def initialize(nombre, sexo, edad)
+  	 @nombre = nombre
+    @sexo = sexo
+    @edad = edad
+  end
 
 end
 
